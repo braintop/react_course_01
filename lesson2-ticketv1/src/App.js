@@ -56,7 +56,6 @@ function App() {
     return (
         <div>
             <Nav text="home" width="100" x="200" />
-            <Nav text="home1" width="150" x="240" />
 
             <Ticketv2
                 ticket={Tickets[0]} //{name: "jhon", destination: "🇷🇪", gender: "Mr",seat: "14A", }
