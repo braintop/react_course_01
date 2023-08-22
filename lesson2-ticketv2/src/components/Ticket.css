@@ -1,0 +1,31 @@
+.ticketContainer {
+    width: 600px;
+    border: 2px solid salmon;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: gainsboro;
+}
+.ticketContainer:hover {
+    background-color: yellow;
+}
+.title {
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+}
+.filedsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.field {
+    font-size: 20px;
+    color: blue;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.field:hover {
+    background-color: bisque;
+}
