@@ -1,0 +1,18 @@
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 3px solid salmon;
+    width: 300px;
+    padding: 20px;
+}
+.btn {
+    width: 200px;
+    height: 40px;
+    background-color: blanchedalmond;
+}
+.txt {
+    color: blue;
+    font-size: 30px;
+}

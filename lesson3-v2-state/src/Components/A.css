@@ -1,0 +1,10 @@
+.containerA {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid sienna;
+    width: 300px;
+}
+.btn {
+    margin: 10px;
+}
