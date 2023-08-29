@@ -1,0 +1,13 @@
+.user {
+    display: flex;
+    flex: row;
+    border: 1px solid salmon;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 70%;
+}
+.user:hover {
+    background-color: bisque;
+}
