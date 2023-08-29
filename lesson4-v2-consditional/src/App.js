@@ -5,6 +5,7 @@ import WeatherDisplay from "./components/WeatherDisplay";
 import { F, G } from "./components/WeatherDisplay";
 import Quiz from "./components/Quiz";
 import User from "./components/User";
+
 function App() {
     const user = {
         firstname: "oren",
