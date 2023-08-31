@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./UserList.css";
+let URL = "https://jsonplaceholder.typicode.com/users";
 export default function UserList({ onSelectUser }) {
-    //phase 1 - const, useState, useEffects
+    //phase 1 - state vars, let ....
     const [users, setUsers] = useState([]);
-
+    //phase 2  effect
     useEffect(() => {
         //get all users
-        fetch("https://jsonplaceholder.typicode.com/users")
+        fetch(URL)
             .then((response) => {
+                //console.log(response);
                 if (!response.ok) {
-                    throw new Error("error happend");
+                    throw new Error("faild retrieve user");
                 }
                 return response.json();
             })
@@ -17,28 +19,34 @@ export default function UserList({ onSelectUser }) {
                 console.log(data);
                 setUsers(data);
             })
-            .catch((error) => console.error("Error fetching users", error));
+            .catch((error) => {
+                console.error("Error is ", error);
+            });
     }, []);
-    //phase 2 - functions
+
+    //phase 3 - function
     function handleSelectedUser(user) {
-        alert("selected user" + user.name);
-        onSelectUser(user); //onSelectUser pass as props
+        // alert(user.name);
+        onSelectUser(user);
     }
-    const displayUsers = users.map((user) => {
+    const allUsers = users.map((user) => {
         return (
             <div
-                onClick={() => handleSelectedUser(user)}
                 key={user.id}
+                onClick={() => handleSelectedUser(user)}
                 className="user"
             >
-                <p>{user.name}</p>:<p>{user.email}</p>
+                <p>{user.name}</p>
+                <p>{user.email}</p>
             </div>
         );
     });
+    //phase 4 - return jsx
     return (
         <div>
-            <h1>All Users</h1>
-            {displayUsers}
+            UserList
+            {/* <div>{users.length && <p>{users[0].name}</p>}</div> */}
+            {allUsers}
         </div>
     );
 }
