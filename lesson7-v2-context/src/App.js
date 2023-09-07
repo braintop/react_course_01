@@ -9,12 +9,11 @@ import ThemeContext from "./context/ThemeContext";
 
 function App() {
     const [user, setUser] = useState({ name: "n", email: "e", age: 1 });
-    console.log("A");
     const [isDarkTheme, setIsDarkTheme] = useState(true);
     const styles = {
         backgroundColor: isDarkTheme ? "black" : "white",
         color: isDarkTheme ? "white" : "black",
-        height: "100vh",
+        height: "400vh",
     };
     return (
         <div className="App">

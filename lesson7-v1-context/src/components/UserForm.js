@@ -3,7 +3,6 @@ import UserContext from "../context/UserContext";
 
 export default function UserForm() {
     const { user, setUser } = useContext(UserContext);
-    const { name, email, age } = user;
 
     function onEmailChange(e) {
         setUser({ ...user, email: e.target.value });

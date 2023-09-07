@@ -1,0 +1,12 @@
+{
+    "countries": [
+        {
+            "name": "israel",
+            "flag": "🇮🇱"
+        },
+        {
+            "name": "Usa",
+            "flag": "🇺🇸"
+        }
+    ]
+}

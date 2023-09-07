@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import UserContext from "../context/UserContext";
 
 export default function Uset() {
-    const { name, setName } = useContext(UserContext);
+    const { name } = useContext(UserContext);
 
     return (
         <div>

@@ -19,7 +19,6 @@ export default function Switch() {
                 <span className="slider"></span>
             </label>
             <p>Switch is {isDarkTheme ? "dark" : "light"}</p>
-            {console.log("E")}
         </div>
     );
 }
