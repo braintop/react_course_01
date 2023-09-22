@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    position: "sticky";
+    width: 100%;
+    background: var(--blue);
+    padding: 10px;
+}
+.NavbarButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.btn {
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.selectedBtn {
+    height: 40px;
+    color: wheat;
+    background: var(--blue);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.RightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    margin-right: 20px;
+}
+.btnLogout {
+    background: "#cdcdcd17";
+    color: "white";
+    height: 40px;
+    border-radius: 5px;
+}

@@ -1,0 +1,41 @@
+.card {
+    width: 600px;
+    height: 500px;
+    padding: 30px 30px 30px 30px;
+    margin: auto;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 3px 3px #0000001f;
+    border-radius: 5px;
+}
+.title {
+    color: var(--blue);
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.input {
+    padding: 20px;
+    border-radius: 5px;
+}
+.comment {
+    padding: 20px;
+    border-radius: 5px;
+}
+.submit {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: white;
+}

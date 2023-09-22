@@ -1,0 +1,10 @@
+.imgContainer {
+    border: 2px solid royalblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: "20px";
+    width: 800px;
+}
